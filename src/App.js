@@ -1,8 +1,10 @@
 import {BrowserRouter as Router, Routes, Route, Link  } from 'react-router-dom'
+import style from './components/layout/Container.module.css'
 import Home from './components/pages/Home'
 import Contact from './components/pages/Contact'
 import Company from './components/pages/Company'
 import NewProject from './components/pages/NewProject'
+import Container from './components/layout/Cointainer'
 
 function App() {
   return (
@@ -13,12 +15,14 @@ function App() {
         <Link to="/contact">Empresa</Link>
         <Link to="/new-project">Novo Projeto</Link>
       </ul>
-      <Routes>
-        <Route exact path='/' element={<Home/>} />
-        <Route exact path='/company' element={<Contact/>} />
-        <Route exact path='/contact' element={<Company/>} />
-        <Route exact path='/new-project' element={<NewProject/>} />
-      </Routes>
+      <Container customClass="min-height">
+        <Routes>
+          <Route exact path='/' element={<Home/>} />
+          <Route exact path='/company' element={<Contact/>} />
+          <Route exact path='/contact' element={<Company/>} />
+          <Route exact path='/new-project' element={<NewProject/>} />
+        </Routes>
+      </Container>
         <p>Footer</p>
     </Router>
   );
