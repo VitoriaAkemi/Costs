@@ -3,7 +3,27 @@ import Select from '../form/Select'
 import SubmitButton from '../form/SubmitButton'
 import styles from './ProjectForm.module.css'
 
+import { useEffect, useState } from 'react'
+
 function ProjectForm ({btnText}) {
+
+    const [categories, setCategories] = useState([])
+
+    useEffect(() => { // o useEffect serve para limitar a chamada da api a apenas 1 vez
+        fetch("http://localhost:5000/categories", {
+            method: "GET",
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
+        .then((resp) => resp.json())
+        .then((data) => {
+            setCategories(data)
+        })
+        .catch((err) => console.log(err))
+    }, [])
+
+
     return (
         <form className={styles.form}>
             <Input
@@ -23,6 +43,7 @@ function ProjectForm ({btnText}) {
             <Select
                 name='category_id' 
                 text='Selecione a categoria'
+                options={categories}
             />
 
             <SubmitButton text={btnText} />
