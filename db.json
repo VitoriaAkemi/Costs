@@ -10,6 +10,72 @@
       },
       "costs": 0,
       "services": []
+    },
+    {
+      "id": "a98a",
+      "name": "project",
+      "budget": "12300",
+      "category": {
+        "id": "1",
+        "name": "Infra"
+      },
+      "costs": 0,
+      "services": []
+    },
+    {
+      "id": "ec2c",
+      "name": "messaage",
+      "budget": "456123",
+      "category": {
+        "id": "4",
+        "name": "Planejamento"
+      },
+      "costs": 0,
+      "services": []
+    },
+    {
+      "id": "ae23",
+      "name": "denovo",
+      "budget": "48643153",
+      "category": {
+        "id": "1",
+        "name": "Infra"
+      },
+      "costs": 0,
+      "services": []
+    },
+    {
+      "id": "fe81",
+      "name": "foda",
+      "budget": "654654156",
+      "category": {
+        "id": "2",
+        "name": "Desenvolvimento"
+      },
+      "costs": 0,
+      "services": []
+    },
+    {
+      "id": "939c",
+      "name": "nha",
+      "budget": "45652",
+      "category": {
+        "id": "1",
+        "name": "Infra"
+      },
+      "costs": 0,
+      "services": []
+    },
+    {
+      "id": "3e86",
+      "name": "123",
+      "budget": "123",
+      "category": {
+        "id": "4",
+        "name": "Planejamento"
+      },
+      "costs": 0,
+      "services": []
     }
   ],
   "categories": [
