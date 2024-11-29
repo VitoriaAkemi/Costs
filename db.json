@@ -21,17 +21,6 @@
       },
       "costs": 0,
       "services": []
-    },
-    {
-      "id": "c51d",
-      "name": "Bom Bonito e Barato",
-      "budget": "123456",
-      "category": {
-        "id": "3",
-        "name": "Design"
-      },
-      "costs": 0,
-      "services": []
     }
   ],
   "categories": [
